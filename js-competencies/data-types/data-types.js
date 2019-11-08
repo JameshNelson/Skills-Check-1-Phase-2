@@ -5,7 +5,7 @@
 // var jsDataTypes = ["bool", "string", "object", "integer", "function", "undefined"]
 // var jsDataTypes = ["boolean", "string", "object", "int", "function"]
 // var jsDataTypes = ["bool", "string", "object", "integer", "function"]
-// var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
+var jsDataTypes = ["boolean", "string", "object", "number", "function", "undefined"]
 
 
 ///////////////////Problem 2//////////////////
@@ -13,28 +13,28 @@
 //null to a boolean - based on whether or not you like 
 //chocolate!
 
-var iLikeChocolate = null
+var iLikeChocolate = true; 
 
 
 ///////////////////Problem 3//////////////////
 //Create a string, and assign it to a variable
 //called myString
 
-//Code here
+let myString = ''; 
 
 
 ///////////////////Problem 4//////////////////
 //Create an integer, and assign it to a variable
 //called myInt
 
-//Code here
+let myInt = 1; 
 
 
 ///////////////////Problem 5//////////////////
 //Create a function called myFunction that returns
 //the string "I am a function!"
 
-//Code here
+let myFunction = () => 'I am a function!'; 
 
 
 ///////////////////Problem 6//////////////////
@@ -43,7 +43,13 @@ var iLikeChocolate = null
 //and a method called whatTeam that returns the team
 //property.
 
-//Code here
+let myObject = {
+    name: 'Nelson',
+    team: 'Not mine',
+    whatTeam: function(){
+        return this.team; 
+    }
+} 
 
 
 ///////////////////Problem 7//////////////////
@@ -51,7 +57,7 @@ var iLikeChocolate = null
 //1, "two", { three: 3 }, and as the 4th element 
 //an array literal that contains 4, 5
 
-//Code here
+let myArray = [1, 'two', {three:3},[4,5]]
 
 
 ///////////////////Problem 8//////////////////
@@ -59,13 +65,13 @@ var iLikeChocolate = null
 //parameter, a mystery parameter. whatAmI should
 //return the data type of the mystery parameter.
 
-//Code here
+let whatAmI = param => typeof(param); 
 
 
 ///////////////////Problem 9//////////////////
 //Create a variable called theVoid. Make it null.
 
-//Code here
+let theVoid = null; 
 
 
 ///////////////////Problem 10//////////////////
@@ -73,7 +79,10 @@ var iLikeChocolate = null
 //an array, and sets the 2nd element of that array
 //to undefined. undefiner should return the array.
 
-//Code here
+let undefiner = (arr) => {
+    return arr[1] = undefined; 
+}
+
 
 
 ///////////////////Problem 11//////////////////
@@ -82,13 +91,20 @@ var iLikeChocolate = null
 //return "FLYING NOCTURNAL MAMMAL MAN!". Otherwise, return the result of
 //the parameter divided by 2.
 
-//Code here
+let nananan= param =>{
+    if(isNaN(param/2)){
+        return "FLYING NOCTURNAL MAMMAL MAN!"
+    }
+    else {
+        return param/2
+    }
+}
 
 
 //Now, call nananan with the value NaN, and store the 
 //result of the function call in a variable called "na".
 
-//Code here
+let na = nananan(NaN); 
 
 
 ///////////////////Problem 12//////////////////
@@ -96,7 +112,11 @@ var iLikeChocolate = null
 //in a parameter. arrayChecker should return true
 //if the parameter is an array, and false otherwise.
 
-//Code here
+let arrayChecker = param => {
+    if(param.isArray()){
+        return true;
+    }
+}
 
 
 ///////////////////Problem 13//////////////////
